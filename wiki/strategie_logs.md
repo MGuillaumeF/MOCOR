@@ -19,4 +19,4 @@ Le format de log générique est le suivant :
 4. Le protocole : `[HTTP]`, `[TCP]`, `[SMTP]`, `[IO]`, `[PROCESS]`
 5. Le message : format libre mais mono ligne 
 
-Note > si le log est de niveau `FATAL` le process doit quitter avec un code d'erreur 
+> Si le log est de niveau `FATAL` le process doit quitter avec un code d'erreur 
