@@ -1,6 +1,6 @@
 # MOCOR
 
-_Modulaire Optimisée Conception Over React_
+_Modules Optimisées de Conception Orientés React_
 
 ## Présentation
 
