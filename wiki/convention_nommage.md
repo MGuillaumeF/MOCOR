@@ -31,31 +31,30 @@ _sans objet_
 
 ## Convention de casse
 
-### SNAKE CASE
+### Snake case
 
 Les fichiers ressources (png, svg, pdf, json, etc...)
 
-### screaming snake case
+### Screaming snake case
 
-Les constantes de configuration 
-Les constantes exportées
-Les clés de traduction
-Les énumérer 
+- Les constantes de configuration 
+- Les constantes exportées
+- Les clés de traduction
+- Les énumérer 
 
-### CAMEL CASE
-
-Les variables
-Les fonctions 
-
-
-### UPPER CAMEL CASE
-
-Les fichiers des classes
-Les classes
-Les composants React
+### Camel case
+- Les variables
+- Les fonctions 
 
 
-Cas particuliers :
+### Upper camel case
+
+- Les fichiers des classes
+- Les classes
+- Les composants React
+
+
+### Cas particuliers
 
 
 Si possible éviter les majuscules pour les noms des fichiers (sauf quand le nom du fichier reprend le nom de son contenu)
