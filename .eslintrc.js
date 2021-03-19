@@ -1,7 +1,9 @@
 module.exports = {
   "extends": [
     // react hooks recommended rules configuration 
-    "plugin:react-hooks/recommended"
+    "plugin:react-hooks/recommended",
+    "react-app",
+    "react-app/jest"
   ],
   "plugins": [
     "react-hooks"
