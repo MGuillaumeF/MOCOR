@@ -25,7 +25,8 @@
     "eject": "react-scripts eject",
     "prettier": "prettier --write . --ignore-path ./.gitignore",
     "lint:eslint": "eslint . --ignore-path --format html --output-file ./dist/reports/lint/eslint-report.html --ignore-path ./.gitignore",
-    "lint:stylelint": "stylelint \"**/*.{css,scss,sass}\" --format json > ./dist/reports/lint/stylelint-report.json --ignore-path ./.gitignore"
+    "lint:stylelint": "stylelint \"**/*.{css,scss,sass}\" --format json > ./dist/reports/lint/stylelint-report.json --ignore-path ./.gitignore",
+    "lint:htmllint" : "html-lint http://localhost:3000 --verbose > ./dist/reports/lint/htmllint-report.txt"
   },
   "browserslist": {
     "production": [
