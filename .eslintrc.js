@@ -3,10 +3,15 @@ module.exports = {
     // react hooks recommended rules configuration 
     "plugin:react-hooks/recommended",
     "react-app",
-    "react-app/jest"
+    "prettier",
+    "react-app/jest",
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended"
   ],
   "plugins": [
-    "react-hooks"
+    "react-hooks",
+    "@typescript-eslint",
+    "prettier"
   ],
   "rules": {
     "react-hooks/rules-of-hooks": "error",
