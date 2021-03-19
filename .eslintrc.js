@@ -2,16 +2,32 @@ module.exports = {
   "extends": [
     // react hooks recommended rules configuration 
     "plugin:react-hooks/recommended",
+    "plugin:react/recommended",
     "react-app",
     "prettier",
     "react-app/jest",
+    "plugin:jest/recommended",
     "eslint:recommended",
-    "plugin:@typescript-eslint/recommended"
+    "plugin:@typescript-eslint/recommended",
+    "plugin:promise/recommended",
+    "plugin:cypress/recommended",
+    "plugin:react-perf/recommended",
+    "plugin:jest-react/recommended",
+    "plugin:typescript-sort-keys/recommended",
+    "plugin:node/recommended"
   ],
   "plugins": [
+    "node",
+    "react",
     "react-hooks",
+    "react-perf",
     "@typescript-eslint",
-    "prettier"
+    "typescript-sort-keys",
+    "prettier",
+    "jest",
+    "jest-react",
+    "promise",
+    "cypress"
   ],
   "rules": {
     "react-hooks/rules-of-hooks": "error",
