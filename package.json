@@ -1,76 +1,76 @@
 {
-  "name": "mocor",
-  "version": "0.0.1",
-  "description": "_Modules Optimisées de Conception Orientés React_",
-  "main": "index.js",
-  "private": true,
-  "bin": {
-    "mocor": "./bin/index.js"
-  },
-  "dependencies": {
-    "@testing-library/jest-dom": "^5.11.9",
-    "@testing-library/react": "^11.2.5",
-    "@testing-library/user-event": "^12.8.3",
-    "@types/jest": "^26.0.20",
-    "@types/node": "^12.20.6",
-    "@types/react": "^17.0.3",
-    "@types/react-dom": "^17.0.2",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
-    "react-scripts": "4.0.3",
-    "typescript": "^4.2.3",
-    "web-vitals": "^1.1.1"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "postbuild": "npm uninstall -g . && npm install -g .",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "prettier": "prettier --write . --ignore-path ./.gitignore",
-    "lint:eslint": "eslint . --ignore-path --format html --output-file ./dist/reports/lint/eslint-report.html --ignore-path ./.gitignore",
-    "lint:stylelint": "stylelint \"**/*.{css,scss,sass}\" --format json > ./dist/reports/lint/stylelint-report.json --ignore-path ./.gitignore",
-    "lint:htmllint": "html-lint http://localhost:3000 --verbose > ./dist/reports/lint/htmllint-report.txt"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/MGuillaumeF/MOCOR.git"
-  },
-  "author": "MGuillaumeF",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/MGuillaumeF/MOCOR/issues"
-  },
-  "homepage": "https://github.com/MGuillaumeF/MOCOR#readme",
-  "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^4.18.0",
-    "@typescript-eslint/parser": "^4.18.0",
-    "eslint": "^7.22.0",
-    "eslint-config-prettier": "^8.1.0",
-    "eslint-plugin-cypress": "^2.11.2",
-    "eslint-plugin-jest": "^24.3.1",
-    "eslint-plugin-jest-react": "^0.0.2",
-    "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-prettier": "^3.3.1",
-    "eslint-plugin-promise": "^4.3.1",
-    "eslint-plugin-react": "^7.22.0",
-    "eslint-plugin-react-hooks": "^4.2.0",
-    "eslint-plugin-react-perf": "^3.3.0",
-    "eslint-plugin-typescript-sort-keys": "^1.5.0",
-    "html-lint": "^2.4.2",
-    "prettier": "^2.2.1",
-    "stylelint": "^13.12.0"
-  }
+    "name": "mocor",
+    "version": "0.0.1",
+    "description": "_Modules Optimisées de Conception Orientés React_",
+    "main": "index.js",
+    "private": true,
+    "bin": {
+        "mocor": "./bin/index.js"
+    },
+    "dependencies": {
+        "@testing-library/jest-dom": "^5.11.9",
+        "@testing-library/react": "^11.2.5",
+        "@testing-library/user-event": "^12.8.3",
+        "@types/jest": "^26.0.20",
+        "@types/node": "^12.20.6",
+        "@types/react": "^17.0.3",
+        "@types/react-dom": "^17.0.2",
+        "react": "^17.0.1",
+        "react-dom": "^17.0.1",
+        "react-scripts": "4.0.3",
+        "typescript": "^4.2.3",
+        "web-vitals": "^1.1.1"
+    },
+    "scripts": {
+        "start": "react-scripts start",
+        "build": "react-scripts build",
+        "postbuild": "npm uninstall -g . && npm install -g .",
+        "test": "react-scripts test",
+        "eject": "react-scripts eject",
+        "prettier": "prettier --write . --ignore-path ./.gitignore",
+        "lint:eslint": "eslint . --ignore-path --format html --output-file ./dist/reports/lint/eslint-report.html --ignore-path ./.gitignore",
+        "lint:stylelint": "stylelint \"**/*.{css,scss,sass}\" --format json > ./dist/reports/lint/stylelint-report.json --ignore-path ./.gitignore",
+        "lint:htmllint": "html-lint http://localhost:3000 --verbose > ./dist/reports/lint/htmllint-report.txt"
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/MGuillaumeF/MOCOR.git"
+    },
+    "author": "MGuillaumeF",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/MGuillaumeF/MOCOR/issues"
+    },
+    "homepage": "https://github.com/MGuillaumeF/MOCOR#readme",
+    "devDependencies": {
+        "@typescript-eslint/eslint-plugin": "^4.18.0",
+        "@typescript-eslint/parser": "^4.18.0",
+        "eslint": "^7.22.0",
+        "eslint-config-prettier": "^8.1.0",
+        "eslint-plugin-cypress": "^2.11.2",
+        "eslint-plugin-jest": "^24.3.1",
+        "eslint-plugin-jest-react": "^0.0.2",
+        "eslint-plugin-node": "^11.1.0",
+        "eslint-plugin-prettier": "^3.3.1",
+        "eslint-plugin-promise": "^4.3.1",
+        "eslint-plugin-react": "^7.22.0",
+        "eslint-plugin-react-hooks": "^4.2.0",
+        "eslint-plugin-react-perf": "^3.3.0",
+        "eslint-plugin-typescript-sort-keys": "^1.5.0",
+        "html-lint": "^2.4.2",
+        "prettier": "^2.2.1",
+        "stylelint": "^13.12.0"
+    }
 }
