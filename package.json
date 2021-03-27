@@ -27,6 +27,10 @@
         "postbuild": "npm uninstall -g . && npm install -g .",
         "test": "react-scripts test",
         "eject": "react-scripts eject",
+        "doc:build": "styleguidist build",
+        "doc:dev": "styleguidist server",
+        "cy:open": "cypress open",
+        "cy:run": "wait-on http://locahost:3000 && cypress run --config-file cypress.json",
         "prettier": "prettier --write . --ignore-path ./.gitignore",
         "lint:eslint": "eslint . --ignore-path --format html --output-file ./dist/reports/lint/eslint-report.html --ignore-path ./.gitignore",
         "lint:stylelint": "stylelint \"**/*.{css,scss,sass}\" --format json > ./dist/reports/lint/stylelint-report.json --ignore-path ./.gitignore",
@@ -48,8 +52,8 @@
         "type": "git",
         "url": "git+https://github.com/MGuillaumeF/MOCOR.git"
     },
-    "author":  {
-        "name" :"MGuillaumeF",
+    "author": {
+        "name": "MGuillaumeF",
         "email": "michel.guillaume--foucaud@hotmail.fr"
     },
     "license": "MIT",
@@ -60,6 +64,7 @@
     "devDependencies": {
         "@typescript-eslint/eslint-plugin": "^4.18.0",
         "@typescript-eslint/parser": "^4.18.0",
+        "cypress": "^6.8.0",
         "eslint": "^7.22.0",
         "eslint-config-prettier": "^8.1.0",
         "eslint-plugin-cypress": "^2.11.2",
@@ -73,7 +78,10 @@
         "eslint-plugin-react-perf": "^3.3.0",
         "eslint-plugin-typescript-sort-keys": "^1.5.0",
         "html-lint": "^2.4.2",
+        "node-sass": "^5.0.0",
         "prettier": "^2.2.1",
+        "react-docgen-typescript": "^1.21.0",
+        "react-styleguidist": "^11.1.6",
         "stylelint": "^13.12.0",
         "stylelint-config-standard": "^21.0.0",
         "stylelint-prettier": "^1.2.0"
