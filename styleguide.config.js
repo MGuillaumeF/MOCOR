@@ -15,9 +15,14 @@ module.exports = {
     ],
     theme: {
       color: {
-        baseBackground: '#333',
         base: '#FFF',
-        sidebarBackground: '#303030',
+        baseBackground: '#222',
+        sidebarBackground: '#333',
+        codebarBackground: '#333',
+        link : 'rgb(218, 133, 0);',
+        linkHover : 'rgb(238, 153, 0)',
+        type : 'rgb(20,200,20)',
+        codeBase : '#055505',
         codeProperty: '#ff008c',
         codeDeleted: '#ff008c'
       }
