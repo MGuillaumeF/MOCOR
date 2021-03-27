@@ -13,11 +13,9 @@ module.exports = {
     "plugin:cypress/recommended",
     "plugin:react-perf/recommended",
     "plugin:jest-react/recommended",
-    "plugin:typescript-sort-keys/recommended",
-    "plugin:node/recommended"
+    "plugin:typescript-sort-keys/recommended"
   ],
   "plugins": [
-    "node",
     "react",
     "react-hooks",
     "react-perf",
@@ -32,5 +30,13 @@ module.exports = {
   "rules": {
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "error"
-  }
+  },
+  "overrides" : [
+    {
+      "files" : ["**/*.node.js", "**/*.node.ts"],
+      "extends" : [
+        "plugin:node/recommended"
+      ]
+    }
+  ]
 };
