@@ -17,7 +17,16 @@ module.exports = {
       color: {
         baseBackground: '#333',
         base: '#FFF',
+        border: '#454545',
         sidebarBackground: '#303030',
+
+        name: '#6A38FF',
+	type: '#FEB73D',
+	error: '#aa0000',
+
+        // code area colors
+        codeBase: '#A1B7D6',
+        codeBackground: '#171717',
         codeComment: '#171717',
         codePunctuation: '#aa0000',
         codeProperty: '#6A38FF',
