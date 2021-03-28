@@ -18,8 +18,16 @@ module.exports = {
         baseBackground: '#333',
         base: '#FFF',
         sidebarBackground: '#303030',
-        codeProperty: '#ff008c',
-        codeDeleted: '#ff008c'
+        codeComment: '#171717',
+        codePunctuation: '#aa0000',
+        codeProperty: '#6A38FF',
+        codeDeleted: '#6A38FF',
+        codeString: '#3DCEFF',
+        codeInserted: '#690',
+        codeOperator: '#aa0000',
+        codeKeyword: '#6A38FF',
+        codeFunction: '#FEB73D',
+        codeVariable: '#3D76FF'
       }
     },
     sections: [
