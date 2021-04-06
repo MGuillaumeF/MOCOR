@@ -8,7 +8,7 @@ interface IMeter extends HTMLProps<HTMLMeterElement> {
     /**
    * To define the background color of meter
    */
-  bgMeterColor?: string;
+  bgMeterColor?: string; 
   /**
    * The description of meter
    */
