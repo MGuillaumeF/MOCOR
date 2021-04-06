@@ -17,14 +17,31 @@ module.exports = {
       color: {
         base: '#FFF',
         baseBackground: '#222',
-        sidebarBackground: '#333',
         codebarBackground: '#333',
         link : 'rgb(218, 133, 0);',
         linkHover : 'rgb(238, 153, 0)',
-        type : 'rgb(20,200,20)',
-        codeBase : '#055505',
-        codeProperty: '#ff008c',
-        codeDeleted: '#ff008c'
+
+
+        border: '#454545',
+        sidebarBackground: '#303030',
+
+        name: '#6A38FF',
+        type: '#FEB73D',
+        error: '#aa0000',
+
+        // code area colors
+        codeBase: '#A1B7D6',
+        codeBackground: '#171717',
+        codeComment: '#171717',
+        codePunctuation: '#aa0000',
+        codeProperty: '#6A38FF',
+        codeDeleted: '#6A38FF',
+        codeString: '#3DCEFF',
+        codeInserted: '#690',
+        codeOperator: '#aa0000',
+        codeKeyword: '#6A38FF',
+        codeFunction: '#FEB73D',
+        codeVariable: '#3D76FF'
       }
     },
     sections: [

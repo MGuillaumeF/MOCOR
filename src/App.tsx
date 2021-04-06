@@ -2,8 +2,8 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Meter from './components/semantics/Meter/Meter';
-
-const meterStyle = { width: '3em', height: 'auto' }
+import CSS from 'csstype';
+const meterStyle : CSS.Properties = { width: '3em', height: 'auto' }
 
 function App() {
   return (
