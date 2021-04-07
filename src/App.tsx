@@ -1,15 +1,13 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import Meter from './components/semantics/Meter/Meter';
 import CSS from 'csstype';
 const meterStyle : CSS.Properties = { width: '3em', height: 'auto' }
 
-function App() {
+function App() : JSX.Element{
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
         <Meter
         value={6}
         max={10}

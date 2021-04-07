@@ -20,7 +20,7 @@ function CallerComponent() {
         fontMeterColor='blue'
       />
       <br />
-      <label htmlFor='set'>
+      <label htmlFor='set' style={{color:'white'}}>
         {'The value in the Meter [min=0, max=10] is  : '}
         <input
           id='set'

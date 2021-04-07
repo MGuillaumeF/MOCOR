@@ -1,4 +1,5 @@
 module.exports = {
+    // eslint-disable-next-line @typescript-eslint/no-var-requires
     propsParser: require('react-docgen-typescript').withCustomConfig(
       './tsconfig.json'
     ).parse,
@@ -25,7 +26,7 @@ module.exports = {
         border: '#454545',
         sidebarBackground: '#303030',
 
-        name: '#6A38FF',
+        name: '#a48bf1',
         type: '#FEB73D',
         error: '#aa0000',
 
@@ -34,12 +35,12 @@ module.exports = {
         codeBackground: '#171717',
         codeComment: '#171717',
         codePunctuation: '#aa0000',
-        codeProperty: '#6A38FF',
-        codeDeleted: '#6A38FF',
+        codeProperty: '#a48bf1',
+        codeDeleted: '#a48bf1',
         codeString: '#3DCEFF',
         codeInserted: '#690',
         codeOperator: '#aa0000',
-        codeKeyword: '#6A38FF',
+        codeKeyword: '#a48bf1',
         codeFunction: '#FEB73D',
         codeVariable: '#3D76FF'
       }
