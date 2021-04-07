@@ -4,7 +4,7 @@ import './Meter.scss';
 // const LOGGER = Logger.getInstance();
 const LOGGER = console ;
 
-interface IMeter extends HTMLProps<HTMLMeterElement> {
+interface IMeterProps extends HTMLProps<HTMLMeterElement> {
     /**
    * To define the background color of meter
    */
@@ -48,7 +48,7 @@ interface IMeter extends HTMLProps<HTMLMeterElement> {
  * Function to create Meter component
  * @param props Function to create SVG Component
  */
-export default function Meter(props: IMeter): ReactElement {
+export default function Meter(props: IMeterProps): ReactElement {
   const angleOffset = Math.PI / 2;
   const radius = 150;
 
