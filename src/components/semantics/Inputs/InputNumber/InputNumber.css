@@ -1,0 +1,226 @@
+body, hthm {
+  background: #fafafa;
+  padding: 0px;
+  margin: 0px;
+  width: 100%;
+  min-height: 100vh;
+}
+
+:root {
+  --primary-color-1 : rgba(180,180,0,1);
+  --primary-color-2: rgba(180,180,0,0.6);
+  --primary-color-3: rgba(180,180,0,0.3);
+  --secondary-color-1 : rgba(180,0,90,1);
+  --tertiary-color-1 : rgba(180,90,0,1);
+}
+
+
+.fwk-container {
+  background-color: #333;
+  color : #fff;
+  padding : 10px;
+}
+
+.f-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-container {
+  position: relative;
+}
+
+
+input[type=text].MOCOR-UI,
+input[type=tel].MOCOR-UI,
+input[type=password].MOCOR-UI,
+input[type=number].MOCOR-UI,
+input[type=url].MOCOR-UI,
+input[type=search].MOCOR-UI,
+input[type=date].MOCOR-UI,
+input[type=datetime].MOCOR-UI,
+input[type=datetime-local].MOCOR-UI,
+input[type=time].MOCOR-UI,
+input[type=week].MOCOR-UI,
+input[type=month].MOCOR-UI,
+input[type=email].MOCOR-UI {
+  margin-top: 1em;
+  border-style: solid;
+  border-color: var(--primary-color-2);
+  border-width: 0px 0px 2px 0px;
+  border-radius: 0px;
+  -webkit-appearance: none;
+  min-height: 1em;
+  background-color:#ffffff0F;
+  box-shadow:unset;
+  transition: all 300ms ease-in-out;
+  color: #fafafa;
+}
+
+input[type=text].MOCOR-UI:focus,
+input[type=tel].MOCOR-UI:focus,
+input[type=password].MOCOR-UI:focus,
+input[type=number].MOCOR-UI:focus,
+input[type=url].MOCOR-UI:focus,
+input[type=search].MOCOR-UI:focus,
+input[type=date].MOCOR-UI:focus,
+input[type=datetime].MOCOR-UI:focus,
+input[type=datetime-local].MOCOR-UI:focus,
+input[type=time].MOCOR-UI:focus,
+input[type=week].MOCOR-UI:focus,
+input[type=month].MOCOR-UI:focus,
+input[type=email].MOCOR-UI:focus {
+  outline: none;
+  border-color: var(--primary-color-1);
+  box-shadow:0px 0px 2px 1px var(--primary-color-3);
+}
+
+input[type=text].MOCOR-UI:not(:placeholder-shown) + label,
+input[type=text].MOCOR-UI:focus + label,
+input[type=tel].MOCOR-UI:not(:placeholder-shown) + label,
+input[type=tel].MOCOR-UI:focus + label,
+input[type=password].MOCOR-UI:not(:placeholder-shown) + label,
+input[type=password].MOCOR-UI:focus + label,
+input[type=number].MOCOR-UI:not(:placeholder-shown) + label,
+input[type=number].MOCOR-UI:focus + label,
+input[type=url].MOCOR-UI:not(:placeholder-shown) + label,
+input[type=url].MOCOR-UI:focus + label,
+input[type=search].MOCOR-UI:not(:placeholder-shown) + label,
+input[type=search].MOCOR-UI:focus + label,
+input[type=email].MOCOR-UI:not(:placeholder-shown) + label,
+input[type=email].MOCOR-UI:focus + label{
+  color : white;
+  position: absolute;
+  font-size: 0.5em;
+  left: 0.7em;
+}
+
+
+input[type=text].MOCOR-UI:placeholder-shown:not(:focus) + label,
+input[type=tel].MOCOR-UI:placeholder-shown:not(:focus) + label,
+input[type=password].MOCOR-UI:placeholder-shown:not(:focus) + label,
+input[type=email].MOCOR-UI:placeholder-shown:not(:focus) + label,
+input[type=number].MOCOR-UI:placeholder-shown:not(:focus) + label,
+input[type=url].MOCOR-UI:placeholder-shown:not(:focus) + label,
+input[type=search].MOCOR-UI:placeholder-shown:not(:focus) + label {
+  color : silver;
+  position: absolute;
+  left: 0.5em;
+  top: 0.65em;
+}
+
+input[type=color].MOCOR-UI
+{
+  
+  -webkit-appearance: none;
+  appearance: none;
+  border-style: solid;
+  border-color: var(--primary-color-2);
+  border-width: 0px 0px 2px 0px;
+  border-radius: 0px;
+  min-height: 1em;
+  background-color:#ffffff0F;
+  box-shadow:unset;
+}
+
+input[type=radio].MOCOR-UI,
+input[type=checkbox].MOCOR-UI
+{
+  
+  -webkit-appearance: none;
+  appearance: none;
+  border-style: solid;
+  border-color: var(--primary-color-2);
+  border-width: 2px;
+  border-radius: 0px;
+  height: 1.5em;
+  width: 1.5em;
+  background-color:#ffffff0F;
+  box-shadow:unset;
+}
+
+input[type=radio].MOCOR-UI {
+  border-radius : 50%;
+}
+
+input[type=checkbox].MOCOR-UI {
+  border-radius : 1px;
+}
+
+input[type=checkbox].MOCOR-UI:checked ,
+input[type=radio].MOCOR-UI:checked {
+  border-color: var(--primary-color-1);
+  top: 0px;
+  left: 0px;
+  box-shadow: inset 0px 0px 3px var(--primary-color-1);
+}
+
+input[type=radio].MOCOR-UI:checked::after {
+ width: 0.8em;
+ height: 0.8em;
+ top: 0.6em;
+ left: 0.6em;
+ position : absolute;
+ background-color : var(--primary-color-1);
+ border-radius: 50%;
+ content: "";
+}
+
+input[type=file].MOCOR-UI::after,
+input[type=button].MOCOR-UI,
+input[type=reset].MOCOR-UI,
+input[type=submit].MOCOR-UI {
+ -webkit-appearance: none;
+  appearance: none;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 4px;
+  background-color: #fafafa;
+  border-color: #fafafa;
+  color : black;
+}
+
+
+input[type=button].MOCOR-UI.primary,
+input[type=reset].MOCOR-UI.primary,
+input[type=submit].MOCOR-UI.primary {
+  background-color: var(--primary-color-1);
+  border-color: var(--primary-color-1);
+  color : white;
+}
+
+input[type=button].MOCOR-UI.secondary,
+input[type=reset].MOCOR-UI.secondary,
+input[type=submit].MOCOR-UI.secondary {
+  background-color: var(--secondary-color-1);
+  border-color: var(--secondary-color-1);
+  color : white;
+}
+
+input[type=button].MOCOR-UI.tertiary,
+input[type=reset].MOCOR-UI.tertiary,
+input[type=submit].MOCOR-UI.tertiary {
+  background-color: var(--tertiary-color-1);
+  border-color: var(--tertiary-color-1);
+  color : white;
+}
+
+input[type=button].MOCOR-UI.outline,
+input[type=reset].MOCOR-UI.outline,
+input[type=submit].MOCOR-UI.outline {
+  background-color: transparent;
+  color : white;
+}
+
+
+[data-alt]::after {
+  content: attr(data-alt);
+  background-color: #222;
+  color: white;
+  border-radius: 2px;
+  border: 2px solid #ff0000;
+  padding: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
