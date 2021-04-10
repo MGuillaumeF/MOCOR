@@ -1,12 +1,8 @@
-import React, { HTMLProps, ReactElement } from 'react'
+import React, { ReactElement } from 'react'
+import { IInputProps } from '../interfaces'
 import './InputText.scss'
 
-interface IInputTextProps extends HTMLProps<HTMLInputElement> {
-    id : string;
-    label?: string;
-}
-
-function InputText(props: IInputTextProps): ReactElement {
+function InputText(props: IInputProps): ReactElement {
     return (
         <div className="mocor-input-text-container">
             <input {...props} type="text" className="mocor"/>

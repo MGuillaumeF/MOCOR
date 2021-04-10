@@ -22,7 +22,7 @@
     "web-vitals": "^1.1.1"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "PUBLIC_URL=./ react-scripts start",
     "build": "react-scripts build",
     "postbuild": "npm uninstall -g . && npm install -g .",
     "test": "react-scripts test",

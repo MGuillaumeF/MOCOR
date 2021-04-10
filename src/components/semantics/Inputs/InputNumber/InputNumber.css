@@ -1,4 +1,5 @@
-body, hthm {
+
+body, html {
   background: #fafafa;
   padding: 0px;
   margin: 0px;
@@ -7,11 +8,11 @@ body, hthm {
 }
 
 :root {
-  --primary-color-1 : rgba(180,180,0,1);
-  --primary-color-2: rgba(180,180,0,0.6);
-  --primary-color-3: rgba(180,180,0,0.3);
-  --secondary-color-1 : rgba(180,0,90,1);
-  --tertiary-color-1 : rgba(180,90,0,1);
+  --primary-color-1 : rgba(180,180,0,100%);
+  --primary-color-2: rgba(180,180,0,60%);
+  --primary-color-3: rgba(180,180,0,30%);
+  --secondary-color-1 : rgba(180,0,90,100%);
+  --tertiary-color-1 : rgba(180,90,0,100%);
 }
 
 
@@ -31,19 +32,19 @@ body, hthm {
 }
 
 
-input[type=text].MOCOR-UI,
-input[type=tel].MOCOR-UI,
-input[type=password].MOCOR-UI,
-input[type=number].MOCOR-UI,
-input[type=url].MOCOR-UI,
-input[type=search].MOCOR-UI,
-input[type=date].MOCOR-UI,
-input[type=datetime].MOCOR-UI,
-input[type=datetime-local].MOCOR-UI,
-input[type=time].MOCOR-UI,
-input[type=week].MOCOR-UI,
-input[type=month].MOCOR-UI,
-input[type=email].MOCOR-UI {
+input[type=text].mocor,
+input[type=tel].mocor,
+input[type=password].mocor,
+input[type=number].mocor,
+input[type=url].mocor,
+input[type=search].mocor,
+input[type=date].mocor,
+input[type=datetime].mocor,
+input[type=datetime-local].mocor,
+input[type=time].mocor,
+input[type=week].mocor,
+input[type=month].mocor,
+input[type=email].mocor {
   margin-top: 1em;
   border-style: solid;
   border-color: var(--primary-color-2);
@@ -57,38 +58,38 @@ input[type=email].MOCOR-UI {
   color: #fafafa;
 }
 
-input[type=text].MOCOR-UI:focus,
-input[type=tel].MOCOR-UI:focus,
-input[type=password].MOCOR-UI:focus,
-input[type=number].MOCOR-UI:focus,
-input[type=url].MOCOR-UI:focus,
-input[type=search].MOCOR-UI:focus,
-input[type=date].MOCOR-UI:focus,
-input[type=datetime].MOCOR-UI:focus,
-input[type=datetime-local].MOCOR-UI:focus,
-input[type=time].MOCOR-UI:focus,
-input[type=week].MOCOR-UI:focus,
-input[type=month].MOCOR-UI:focus,
-input[type=email].MOCOR-UI:focus {
+input[type=text].mocor:focus,
+input[type=tel].mocor:focus,
+input[type=password].mocor:focus,
+input[type=number].mocor:focus,
+input[type=url].mocor:focus,
+input[type=search].mocor:focus,
+input[type=date].mocor:focus,
+input[type=datetime].mocor:focus,
+input[type=datetime-local].mocor:focus,
+input[type=time].mocor:focus,
+input[type=week].mocor:focus,
+input[type=month].mocor:focus,
+input[type=email].mocor:focus {
   outline: none;
   border-color: var(--primary-color-1);
   box-shadow:0px 0px 2px 1px var(--primary-color-3);
 }
 
-input[type=text].MOCOR-UI:not(:placeholder-shown) + label,
-input[type=text].MOCOR-UI:focus + label,
-input[type=tel].MOCOR-UI:not(:placeholder-shown) + label,
-input[type=tel].MOCOR-UI:focus + label,
-input[type=password].MOCOR-UI:not(:placeholder-shown) + label,
-input[type=password].MOCOR-UI:focus + label,
-input[type=number].MOCOR-UI:not(:placeholder-shown) + label,
-input[type=number].MOCOR-UI:focus + label,
-input[type=url].MOCOR-UI:not(:placeholder-shown) + label,
-input[type=url].MOCOR-UI:focus + label,
-input[type=search].MOCOR-UI:not(:placeholder-shown) + label,
-input[type=search].MOCOR-UI:focus + label,
-input[type=email].MOCOR-UI:not(:placeholder-shown) + label,
-input[type=email].MOCOR-UI:focus + label{
+input[type=text].mocor:not(:placeholder-shown) + label,
+input[type=text].mocor:focus + label,
+input[type=tel].mocor:not(:placeholder-shown) + label,
+input[type=tel].mocor:focus + label,
+input[type=password].mocor:not(:placeholder-shown) + label,
+input[type=password].mocor:focus + label,
+input[type=number].mocor:not(:placeholder-shown) + label,
+input[type=number].mocor:focus + label,
+input[type=url].mocor:not(:placeholder-shown) + label,
+input[type=url].mocor:focus + label,
+input[type=search].mocor:not(:placeholder-shown) + label,
+input[type=search].mocor:focus + label,
+input[type=email].mocor:not(:placeholder-shown) + label,
+input[type=email].mocor:focus + label {
   color : white;
   position: absolute;
   font-size: 0.5em;
@@ -96,21 +97,20 @@ input[type=email].MOCOR-UI:focus + label{
 }
 
 
-input[type=text].MOCOR-UI:placeholder-shown:not(:focus) + label,
-input[type=tel].MOCOR-UI:placeholder-shown:not(:focus) + label,
-input[type=password].MOCOR-UI:placeholder-shown:not(:focus) + label,
-input[type=email].MOCOR-UI:placeholder-shown:not(:focus) + label,
-input[type=number].MOCOR-UI:placeholder-shown:not(:focus) + label,
-input[type=url].MOCOR-UI:placeholder-shown:not(:focus) + label,
-input[type=search].MOCOR-UI:placeholder-shown:not(:focus) + label {
+input[type=text].mocor:placeholder-shown:not(:focus) + label,
+input[type=tel].mocor:placeholder-shown:not(:focus) + label,
+input[type=password].mocor:placeholder-shown:not(:focus) + label,
+input[type=email].mocor:placeholder-shown:not(:focus) + label,
+input[type=number].mocor:placeholder-shown:not(:focus) + label,
+input[type=url].mocor:placeholder-shown:not(:focus) + label,
+input[type=search].mocor:placeholder-shown:not(:focus) + label {
   color : silver;
   position: absolute;
   left: 0.5em;
   top: 0.65em;
 }
 
-input[type=color].MOCOR-UI
-{
+input[type=color].mocor {
   
   -webkit-appearance: none;
   appearance: none;
@@ -123,9 +123,8 @@ input[type=color].MOCOR-UI
   box-shadow:unset;
 }
 
-input[type=radio].MOCOR-UI,
-input[type=checkbox].MOCOR-UI
-{
+input[type=radio].mocor,
+input[type=checkbox].mocor {
   
   -webkit-appearance: none;
   appearance: none;
@@ -139,38 +138,38 @@ input[type=checkbox].MOCOR-UI
   box-shadow:unset;
 }
 
-input[type=radio].MOCOR-UI {
+input[type=radio].mocor {
   border-radius : 50%;
 }
 
-input[type=checkbox].MOCOR-UI {
+input[type=checkbox].mocor {
   border-radius : 1px;
 }
 
-input[type=checkbox].MOCOR-UI:checked ,
-input[type=radio].MOCOR-UI:checked {
+input[type=checkbox].mocor:checked ,
+input[type=radio].mocor:checked {
   border-color: var(--primary-color-1);
   top: 0px;
   left: 0px;
   box-shadow: inset 0px 0px 3px var(--primary-color-1);
 }
 
-input[type=radio].MOCOR-UI:checked::after {
- width: 0.8em;
- height: 0.8em;
- top: 0.6em;
- left: 0.6em;
- position : absolute;
- background-color : var(--primary-color-1);
- border-radius: 50%;
- content: "";
+input[type=radio].mocor:checked::after {
+  width: 0.8em;
+  height: 0.8em;
+  top: 0.6em;
+  left: 0.6em;
+  position : absolute;
+  background-color : var(--primary-color-1);
+  border-radius: 50%;
+  content: "";
 }
 
-input[type=file].MOCOR-UI::after,
-input[type=button].MOCOR-UI,
-input[type=reset].MOCOR-UI,
-input[type=submit].MOCOR-UI {
- -webkit-appearance: none;
+input[type=file].mocor::after,
+input[type=button].mocor,
+input[type=reset].mocor,
+input[type=submit].mocor {
+  -webkit-appearance: none;
   appearance: none;
   border-style: solid;
   border-width: 2px;
@@ -181,33 +180,33 @@ input[type=submit].MOCOR-UI {
 }
 
 
-input[type=button].MOCOR-UI.primary,
-input[type=reset].MOCOR-UI.primary,
-input[type=submit].MOCOR-UI.primary {
+input[type=button].mocor.primary,
+input[type=reset].mocor.primary,
+input[type=submit].mocor.primary {
   background-color: var(--primary-color-1);
   border-color: var(--primary-color-1);
   color : white;
 }
 
-input[type=button].MOCOR-UI.secondary,
-input[type=reset].MOCOR-UI.secondary,
-input[type=submit].MOCOR-UI.secondary {
+input[type=button].mocor.secondary,
+input[type=reset].mocor.secondary,
+input[type=submit].mocor.secondary {
   background-color: var(--secondary-color-1);
   border-color: var(--secondary-color-1);
   color : white;
 }
 
-input[type=button].MOCOR-UI.tertiary,
-input[type=reset].MOCOR-UI.tertiary,
-input[type=submit].MOCOR-UI.tertiary {
+input[type=button].mocor.tertiary,
+input[type=reset].mocor.tertiary,
+input[type=submit].mocor.tertiary {
   background-color: var(--tertiary-color-1);
   border-color: var(--tertiary-color-1);
   color : white;
 }
 
-input[type=button].MOCOR-UI.outline,
-input[type=reset].MOCOR-UI.outline,
-input[type=submit].MOCOR-UI.outline {
+input[type=button].mocor.outline,
+input[type=reset].mocor.outline,
+input[type=submit].mocor.outline {
   background-color: transparent;
   color : white;
 }
