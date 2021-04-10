@@ -80,14 +80,8 @@ export default function Meter(props: IMeterProps): ReactElement {
     WHITE = 'white'
   }
 
-  function getColor(): ECOLORS {
-    let color = ECOLORS.WHITE;
-    if (ratio > 0.75) {
-      color = ECOLORS.GREEN;
-    } else if (ratio < 0.5) {
-      color = ECOLORS.RED;
-    }
-    return color;
+  function getColor(): string {
+    return `rgb(${255*(1-ratio)}, ${255*ratio}, 0)`;
   }
   function getXValue() {
     return 200 + Math.cos(angle + angleOffset) * radius;

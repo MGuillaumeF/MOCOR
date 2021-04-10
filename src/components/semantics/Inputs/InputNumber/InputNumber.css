@@ -45,13 +45,13 @@ input[type=time].mocor,
 input[type=week].mocor,
 input[type=month].mocor,
 input[type=email].mocor {
-  margin-top: 1em;
+  margin-top: 1rem;
   border-style: solid;
   border-color: var(--primary-color-2);
   border-width: 0px 0px 2px 0px;
   border-radius: 0px;
   -webkit-appearance: none;
-  min-height: 1em;
+  height: 1.2rem;
   background-color:#ffffff0F;
   box-shadow:unset;
   transition: all 300ms ease-in-out;
@@ -76,6 +76,17 @@ input[type=email].mocor:focus {
   box-shadow:0px 0px 2px 1px var(--primary-color-3);
 }
 
+input[type=text].mocor + label,
+input[type=tel].mocor + label,
+input[type=password].mocor + label,
+input[type=number].mocor + label,
+input[type=url].mocor + label,
+input[type=search].mocor + label,
+input[type=email].mocor + label {
+  transition: all 300ms ease-in-out;
+  top:0;
+}
+
 input[type=text].mocor:not(:placeholder-shown) + label,
 input[type=text].mocor:focus + label,
 input[type=tel].mocor:not(:placeholder-shown) + label,
@@ -92,8 +103,8 @@ input[type=email].mocor:not(:placeholder-shown) + label,
 input[type=email].mocor:focus + label {
   color : white;
   position: absolute;
-  font-size: 0.5em;
-  left: 0.7em;
+  font-size: 0.8rem;
+  left: 0.6rem;
 }
 
 
@@ -106,8 +117,9 @@ input[type=url].mocor:placeholder-shown:not(:focus) + label,
 input[type=search].mocor:placeholder-shown:not(:focus) + label {
   color : silver;
   position: absolute;
-  left: 0.5em;
-  top: 0.65em;
+  left: 0.5rem;
+  top: 1rem;
+  font-size: 1rem;
 }
 
 input[type=color].mocor {
@@ -118,7 +130,7 @@ input[type=color].mocor {
   border-color: var(--primary-color-2);
   border-width: 0px 0px 2px 0px;
   border-radius: 0px;
-  min-height: 1em;
+  min-height: 1rem;
   background-color:#ffffff0F;
   box-shadow:unset;
 }
@@ -132,8 +144,8 @@ input[type=checkbox].mocor {
   border-color: var(--primary-color-2);
   border-width: 2px;
   border-radius: 0px;
-  height: 1.5em;
-  width: 1.5em;
+  height: 1.5rem;
+  width: 1.5rem;
   background-color:#ffffff0F;
   box-shadow:unset;
 }
@@ -155,10 +167,10 @@ input[type=radio].mocor:checked {
 }
 
 input[type=radio].mocor:checked::after {
-  width: 0.8em;
-  height: 0.8em;
-  top: 0.6em;
-  left: 0.6em;
+  width: 0.8rem;
+  height: 0.8rem;
+  top: 0.6rem;
+  left: 0.6rem;
   position : absolute;
   background-color : var(--primary-color-1);
   border-radius: 50%;

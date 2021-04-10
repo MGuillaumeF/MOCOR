@@ -5,7 +5,7 @@ import './InputNumber.css'
 function InputNumber(props: IInputProps): ReactElement {
     return (
         <div className="mocor-input-text-container f-col input-container" >
-            <input {...props} type="number" className="mocor"/>
+            <input {...props} type="number" className="mocor" placeholder=" "/>
             {props.label? <label id={`${props.id}-label`} htmlFor={props.id}>{props.label}</label> : null}
         </div>
     )

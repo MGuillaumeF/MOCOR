@@ -22,7 +22,7 @@ function App() : JSX.Element{
         bgMeterColor='#222'
       />
       <InputText id="essai-1" label="update gauge" value={state} onChange={onChange}/>
-      <InputNumber id="essai-2" label="update gauge" value={state} onChange={onChange}/>
+      <InputNumber id="essai-2" label="update gauge" onChange={onChange}/>
       </header>
     </div>
   );
