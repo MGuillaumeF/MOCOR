@@ -74,12 +74,6 @@ export default function Meter(props: IMeterProps): ReactElement {
 
   const angle = ratio * 2 * Math.PI;
 
-  enum ECOLORS {
-    GREEN = 'green',
-    RED = 'red',
-    WHITE = 'white'
-  }
-
   function getColor(): string {
     return `rgb(${255*(1-ratio)}, ${255*ratio}, 0)`;
   }
@@ -92,18 +86,30 @@ export default function Meter(props: IMeterProps): ReactElement {
   return (
     <svg
       className='mocor-meter'
-      style={props.style}
+      //style={props.style}
       viewBox='0 0 400 400'
       xmlns='http://www.w3.org/2000/svg'
       version='1.1'
+      strokeWidth={0}
     >
       <title>{props.title || 'Meter'}</title>
       <desc>{props.description || 'A Meter'}</desc>
 
-      <path
+      {/* <path
         d='M0 200 a 200 200 0 1 0 0 -1 z'
         fill={props.bgMeterColor || '#FFFFFF'}
-      />
+        stroke='transparent'
+      /> */}
+
+<circle
+          cx='200'
+          cy='200'
+          r='195.5'
+          fill='transparent'
+          stroke={props.strikeMeterColor || getColor()}
+          strokeWidth='1'
+        />
+
       {ratio < 1 ? (
         <path
           d={`M200 50 A 150 150 0 ${
@@ -112,6 +118,7 @@ export default function Meter(props: IMeterProps): ReactElement {
           fill='transparent'
           stroke={props.strikeMeterColor || getColor()}
           strokeWidth='20'
+          strokeLinecap="round"
         />
       ) : (
         <circle
