@@ -1,4 +1,4 @@
-import React, { ChangeEvent, CSSProperties, useState } from 'react';
+import React, { ChangeEvent, useState } from 'react';
 import './App.scss';
 import './utils-css/base.scss';
 import './utils-css/fonts/nunito-sans.scss';
@@ -7,7 +7,6 @@ import Meter from './components/semantics/Meter/Meter';
 import InputText from './components/semantics/Inputs/InputText/InputText';
 import InputNumber from './components/semantics/Inputs/InputNumber/InputNumber';
 
-const meterStyle : CSSProperties = { width: '3em', height: 'auto' };
 
 function App() : JSX.Element{
   const [state, setState] = useState(6);
@@ -20,7 +19,6 @@ function App() : JSX.Element{
         <Meter
         value={state}
         max={10}
-        // style={meterStyle}
         bgMeterColor='#222'
       />
       <InputText id="essai-1" label="update gauge" value={state} onChange={onChange}/>

@@ -1,5 +1,6 @@
+
 .input-container {
-    position: relative;
+  position: relative;
 }
 
 input[type="text"],
@@ -15,113 +16,113 @@ input[type="time"],
 input[type="week"],
 input[type="month"],
 input[type="email"] {
-    &.mocor {
-        margin-top: 1rem;
-        border-style: solid;
-        border-color: var(--primary-color-2);
-        border-width: 0px 0px 2px 0px;
-        border-radius: 0px;
-        -webkit-appearance: none;
-        -moz-appearance: none;
-        appearance: none;
-        height: 1.2rem;
-        background-color: #ffffff0f;
-        box-shadow: unset;
-        transition: all 300ms ease-in-out;
-        color: #fafafa;
-        &::-webkit-inner-spin-button,
-        &::-webkit-outer-spin-button {
-            -webkit-appearance: none;
-            display: none;
-        }
-        &:focus {
-            outline: none;
-            border-color: var(--primary-color-1);
-            box-shadow: 0px 0px 2px 1px var(--primary-color-3);
-        }
-        & + label {
-            transition: all 300ms ease-in-out;
-            top: 0;
-        }
-        &:not(:placeholder-shown) + label,
-        &:focus + label {
-            color: white;
-            position: absolute;
-            font-size: 0.8rem;
-            left: 0.6rem;
-        }
-        &:placeholder-shown:not(:focus) + label {
-            color: silver;
-            position: absolute;
-            left: 0.5rem;
-            top: 1rem;
-            font-size: 1rem;
-        }
-    }
-}
-
-input[type="color"].mocor {
-    -webkit-appearance: none;
-    appearance: none;
+  &.mocor {
+    margin-top: 1rem;
     border-style: solid;
     border-color: var(--primary-color-2);
     border-width: 0px 0px 2px 0px;
     border-radius: 0px;
-    min-height: 1rem;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    height: 1.2rem;
     background-color: #ffffff0f;
     box-shadow: unset;
+    transition: all 300ms ease-in-out;
+    color: #fafafa;
+    &::-webkit-inner-spin-button,
+    &::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      display: none;
+    }
+    &:focus {
+      outline: none;
+      border-color: var(--primary-color-1);
+      box-shadow: 0px 0px 2px 1px var(--primary-color-3);
+    }
+    & + label {
+      transition: all 300ms ease-in-out;
+      top: 0;
+    }
+    &:not(:placeholder-shown) + label,
+    &:focus + label {
+      color: white;
+      position: absolute;
+      font-size: 0.8rem;
+      left: 0.6rem;
+    }
+    &:placeholder-shown:not(:focus) + label {
+      color: silver;
+      position: absolute;
+      left: 0.5rem;
+      top: 1rem;
+      font-size: 1rem;
+    }
+  }
+}
+
+input[type="color"].mocor {
+  -webkit-appearance: none;
+  appearance: none;
+  border-style: solid;
+  border-color: var(--primary-color-2);
+  border-width: 0px 0px 2px 0px;
+  border-radius: 0px;
+  min-height: 1rem;
+  background-color: #ffffff0f;
+  box-shadow: unset;
 }
 
 input[type="radio"].mocor,
 input[type="checkbox"].mocor {
-    -webkit-appearance: none;
-    appearance: none;
-    border-style: solid;
-    border-color: var(--primary-color-2);
-    border-width: 2px;
-    border-radius: 0px;
-    height: 1.5rem;
-    width: 1.5rem;
-    background-color: #ffffff0f;
-    box-shadow: unset;
+  -webkit-appearance: none;
+  appearance: none;
+  border-style: solid;
+  border-color: var(--primary-color-2);
+  border-width: 2px;
+  border-radius: 0px;
+  height: 1.5rem;
+  width: 1.5rem;
+  background-color: #ffffff0f;
+  box-shadow: unset;
 }
 
 input[type="radio"].mocor {
-    border-radius: 50%;
+  border-radius: 50%;
 }
 
 input[type="checkbox"].mocor {
-    border-radius: 1px;
+  border-radius: 1px;
 }
 
 input[type="checkbox"].mocor:checked,
 input[type="radio"].mocor:checked {
-    border-color: var(--primary-color-1);
-    top: 0px;
-    left: 0px;
-    box-shadow: inset 0px 0px 3px var(--primary-color-1);
+  border-color: var(--primary-color-1);
+  top: 0px;
+  left: 0px;
+  box-shadow: inset 0px 0px 3px var(--primary-color-1);
 }
 
 input[type="radio"].mocor:checked::after {
-    width: 0.8rem;
-    height: 0.8rem;
-    top: 0.6rem;
-    left: 0.6rem;
-    position: absolute;
-    background-color: var(--primary-color-1);
-    border-radius: 50%;
-    content: "";
+  width: 0.8rem;
+  height: 0.8rem;
+  top: 0.6rem;
+  left: 0.6rem;
+  position: absolute;
+  background-color: var(--primary-color-1);
+  border-radius: 50%;
+  content: "";
 }
 
 %button {
-    -webkit-appearance: none;
-    appearance: none;
-    border-style: solid;
-    border-width: 2px;
-    border-radius: 4px;
-    // background-color: #fafafa;
-    border-color: #fafafa;
-    // color: black;
+  -webkit-appearance: none;
+  appearance: none;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 4px;
+  // background-color: #fafafa;
+  border-color: #fafafa;
+  // color: black;
 }
 
 input[type="button"],
@@ -130,30 +131,30 @@ input[type="submit"],
 button[type="button"],
 button[type="reset"],
 button[type="submit"] {
-    &.mocor {
-        @extend %button;
-        &.primary {
-            background-color: var(--primary-color-1);
-            border-color: var(--primary-color-1);
-            color: white;
-        }
-        &.secondary {
-            background-color: var(--secondary-color-1);
-            border-color: var(--secondary-color-1);
-            color: white;
-        }
-        &.tertiary {
-            background-color: var(--tertiary-color-1);
-            border-color: var(--tertiary-color-1);
-            color: white;
-        }
-        &.outline {
-            background-color: transparent;
-            color: white;
-        }
+  &.mocor {
+    @extend %button;
+    &.primary {
+      background-color: var(--primary-color-1);
+      border-color: var(--primary-color-1);
+      color: white;
     }
+    &.secondary {
+      background-color: var(--secondary-color-1);
+      border-color: var(--secondary-color-1);
+      color: white;
+    }
+    &.tertiary {
+      background-color: var(--tertiary-color-1);
+      border-color: var(--tertiary-color-1);
+      color: white;
+    }
+    &.outline {
+      background-color: transparent;
+      color: white;
+    }
+  }
 }
 
 input[type="file"]::after {
-    @extend %button;
+  @extend %button;
 }
