@@ -1,6 +1,7 @@
 import React, { ChangeEvent, CSSProperties, useState } from 'react';
 import './App.scss';
-import './components/base.scss';
+import './utils-css/base.scss';
+import './utils-css/fonts/nunito-sans.scss';
 import Meter from './components/semantics/Meter/Meter';
 
 import InputText from './components/semantics/Inputs/InputText/InputText';
@@ -24,6 +25,7 @@ function App() : JSX.Element{
       />
       <InputText id="essai-1" label="update gauge" value={state} onChange={onChange}/>
       <InputNumber id="essai-2" label="update gauge" onChange={onChange}/>
+      <input type="submit" className="mocor primary"/> 
       </header>
     </div>
   );
