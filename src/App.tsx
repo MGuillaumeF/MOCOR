@@ -6,6 +6,7 @@ import Meter from './components/semantics/Meter/Meter';
 
 import InputText from './components/semantics/Inputs/InputText/InputText';
 import InputNumber from './components/semantics/Inputs/InputNumber/InputNumber';
+import Button from './components/semantics/Button/Button';
 
 
 function App() : JSX.Element{
@@ -23,7 +24,10 @@ function App() : JSX.Element{
       />
       <InputText id="essai-1" label="update gauge" value={state} onChange={onChange}/>
       <InputNumber id="essai-2" label="update gauge" onChange={onChange}/>
-      <input type="submit" className="mocor primary"/> 
+      <Button id="button-test" type="submit">Test</Button> 
+      <Button id="button-test" type="submit" level="primary">Test</Button> 
+      <Button id="button-test" type="submit" level="secondary">Test</Button> 
+      <Button id="button-test" type="submit" level="tertiary">Test</Button> 
       </header>
     </div>
   );
