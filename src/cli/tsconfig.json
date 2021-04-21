@@ -1,7 +1,5 @@
 {
   "compilerOptions": {
-    "target": "es5",
-    "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
@@ -17,14 +15,15 @@
     "noFallthroughCasesInSwitch": true,
     "forceConsistentCasingInFileNames": true,
     "noImplicitReturns": true,
-    "module": "esnext",
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "jsx": "react-jsx",
+    "module": "commonjs",
     "removeComments": true,
-    "sourceMap": true,
-    "noEmit": true
+    "preserveConstEnums": true,
+    "outDir": "../../dist/bin",
+    "sourceMap": true
   },
-  "include": ["src"]
+  "include": [".", "model/**/*"],
+  "exclude": ["node_modules", "**/*.spec.ts"]
 }

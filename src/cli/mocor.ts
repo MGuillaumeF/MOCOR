@@ -1,9 +1,15 @@
-#! /usr/bin/env node
+#!/usr/bin/env node
 
-type ReportResult =null;
+import { analyze } from "./analyzer";
 
-function analyze() : ReportResult {
-    return null;
+if (require.main === module ) {
+    console.log('HELLO MOCOR CMD');
+    analyze().catch((error) => {
+        console.error(error);
+        process.exitCode = 1;
+    });
+} else {
+    console.log('HELLO MOCOR DEPENDENCE')
 }
 
 const utils = {analyze}

@@ -5,7 +5,7 @@
   "main": "index.js",
   "private": true,
   "bin": {
-    "mocor": "./bin/index.js"
+    "mocor": "./dist/bin/mocor.js"
   },
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.9",
@@ -24,7 +24,8 @@
   "scripts": {
     "start": "PUBLIC_URL=./ react-scripts start",
     "build": "react-scripts build",
-    "postbuild": "npm uninstall -g . && npm install -g .",
+    "build:cli": "tsc --project src/cli",
+    "postbuild": "npm run build:cli && npm uninstall -g . && npm install -g .",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "doc:build": "styleguidist build",

@@ -5,7 +5,7 @@ module.exports = {
     ).parse,
     exampleMode: 'expand',
     usageMode: 'expand',
-    styleguideDir: 'docs',
+    styleguideDir: 'dist/docs',
     pagePerSection: true,
     ignore: [
       '**/index.tsx',
