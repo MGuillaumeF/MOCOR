@@ -8,7 +8,7 @@
   border-color: #fafafa;
   color: black;
 }
-  
+
 input[type="button"],
 input[type="reset"],
 input[type="submit"],
@@ -38,7 +38,7 @@ button[type="submit"] {
     }
   }
 }
-  
+
 input[type="file"]::after {
   @extend %button;
 }

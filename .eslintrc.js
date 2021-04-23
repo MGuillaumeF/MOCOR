@@ -1,6 +1,6 @@
 module.exports = {
-  "extends": [
-    // react hooks recommended rules configuration 
+  extends: [
+    // react hooks recommended rules configuration
     "plugin:react-hooks/recommended",
     "plugin:react/recommended",
     "react-app",
@@ -15,7 +15,7 @@ module.exports = {
     "plugin:jest-react/recommended",
     "plugin:typescript-sort-keys/recommended"
   ],
-  "plugins": [
+  plugins: [
     "react",
     "react-hooks",
     "react-perf",
@@ -27,16 +27,14 @@ module.exports = {
     "promise",
     "cypress"
   ],
-  "rules": {
+  rules: {
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "error"
   },
-  "overrides" : [
+  overrides: [
     {
-      "files" : ["**/*.node.js", "**/*.node.ts"],
-      "extends" : [
-        "plugin:node/recommended"
-      ]
+      files: ["**/*.node.js", "**/*.node.ts"],
+      extends: ["plugin:node/recommended"]
     }
   ]
 };

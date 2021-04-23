@@ -38,11 +38,7 @@
     "lint:htmllint": "html-lint http://localhost:3000 --verbose > ./dist/reports/lint/htmllint-report.txt"
   },
   "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
+    "production": [">0.2%", "not dead", "not op_mini all"],
     "development": [
       "last 1 chrome version",
       "last 1 firefox version",

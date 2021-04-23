@@ -1,3 +1,3 @@
-export function loadCssClasses(...calssNames : string []) {
-    return calssNames.join(' ')
+export function loadCssClasses(...calssNames: string[]) {
+  return calssNames.join(" ");
 }

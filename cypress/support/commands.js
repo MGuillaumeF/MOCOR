@@ -27,14 +27,14 @@
 const COMMAND_DELAY = 300;
 
 for (const command of [
-  'visit',
-  'click',
-  'trigger',
-  'type',
-  'clear',
-  'reload',
-  'contains',
-  'submit'
+  "visit",
+  "click",
+  "trigger",
+  "type",
+  "clear",
+  "reload",
+  "contains",
+  "submit"
 ]) {
   Cypress.Commands.overwrite(command, (originalFn, ...args) => {
     const origVal = originalFn(...args);

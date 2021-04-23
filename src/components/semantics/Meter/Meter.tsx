@@ -1,14 +1,14 @@
-import React, { HTMLProps, ReactElement } from 'react';
-import './Meter.scss';
+import React, { HTMLProps, ReactElement } from "react";
+import "./Meter.scss";
 // import { Logger } from '../../logger';
 // const LOGGER = Logger.getInstance();
-const LOGGER = console ;
+const LOGGER = console;
 
 interface IMeterProps extends HTMLProps<HTMLMeterElement> {
-    /**
+  /**
    * To define the background color of meter
    */
-  bgMeterColor?: string; 
+  bgMeterColor?: string;
   /**
    * The description of meter
    */
@@ -25,7 +25,7 @@ interface IMeterProps extends HTMLProps<HTMLMeterElement> {
    * The min end of Meter
    */
   min?: number;
-  
+
   /**
    * To define the color of meter
    */
@@ -58,15 +58,15 @@ export default function Meter(props: IMeterProps): ReactElement {
   if (min > max) {
     min = 0;
     max = 100;
-    LOGGER.error('Invalid définition of min and max values');
+    LOGGER.error("Invalid définition of min and max values");
   }
   if (note > max) {
     note = max;
-    LOGGER.error('Note out of max range');
+    LOGGER.error("Note out of max range");
   }
   if (note < min) {
     note = min;
-    LOGGER.error('Note out of min range');
+    LOGGER.error("Note out of min range");
   }
   const totalRange = max - min;
   const valueRange = note - min;
@@ -75,7 +75,7 @@ export default function Meter(props: IMeterProps): ReactElement {
   const angle = ratio * 2 * Math.PI;
 
   function getColor(): string {
-    return `rgb(${255*(1-ratio)}, ${255*ratio}, 0)`;
+    return `rgb(${255 * (1 - ratio)}, ${255 * ratio}, 0)`;
   }
   function getXValue() {
     return 200 + Math.cos(angle + angleOffset) * radius;
@@ -85,15 +85,15 @@ export default function Meter(props: IMeterProps): ReactElement {
   }
   return (
     <svg
-      className='mocor-meter'
+      className="mocor-meter"
       //style={props.style}
-      viewBox='0 0 400 400'
-      xmlns='http://www.w3.org/2000/svg'
-      version='1.1'
+      viewBox="0 0 400 400"
+      xmlns="http://www.w3.org/2000/svg"
+      version="1.1"
       strokeWidth={0}
     >
-      <title>{props.title || 'Meter'}</title>
-      <desc>{props.description || 'A Meter'}</desc>
+      <title>{props.title || "Meter"}</title>
+      <desc>{props.description || "A Meter"}</desc>
 
       {/* <path
         d='M0 200 a 200 200 0 1 0 0 -1 z'
@@ -101,43 +101,43 @@ export default function Meter(props: IMeterProps): ReactElement {
         stroke='transparent'
       /> */}
 
-<circle
-          cx='200'
-          cy='200'
-          r='195.5'
-          fill='transparent'
-          stroke={props.strikeMeterColor || getColor()}
-          strokeWidth='1'
-        />
+      <circle
+        cx="200"
+        cy="200"
+        r="195.5"
+        fill="transparent"
+        stroke={props.strikeMeterColor || getColor()}
+        strokeWidth="1"
+      />
 
       {ratio < 1 ? (
         <path
           d={`M200 50 A 150 150 0 ${
             angle < Math.PI ? 0 : 1
           } 0 ${getXValue()} ${getYValue()}`}
-          fill='transparent'
+          fill="transparent"
           stroke={props.strikeMeterColor || getColor()}
-          strokeWidth='20'
+          strokeWidth="20"
           strokeLinecap="round"
         />
       ) : (
         <circle
-          cx='200'
-          cy='200'
-          r='150'
-          fill='transparent'
+          cx="200"
+          cy="200"
+          r="150"
+          fill="transparent"
           stroke={props.strikeMeterColor || getColor()}
-          strokeWidth='20'
+          strokeWidth="20"
         />
       )}
 
       <text
-        x='200'
-        y='200'
-        dominantBaseline='middle'
-        textAnchor='middle'
-        fontFamily='Helvetica,Verdana, Arial, sans-serif'
-        fontSize='100'
+        x="200"
+        y="200"
+        dominantBaseline="middle"
+        textAnchor="middle"
+        fontFamily="Helvetica,Verdana, Arial, sans-serif"
+        fontSize="100"
         fill={props.fontMeterColor || getColor()}
       >
         {note}

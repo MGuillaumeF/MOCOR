@@ -1,42 +1,47 @@
-import {promises as fs} from 'fs';
-import path from 'path';
-import stylelint from 'stylelint';
-import { ESLint } from 'eslint';
-import { getTree } from './filesystem-utils/tree';
+import { promises as fs } from "fs";
+import path from "path";
+import stylelint from "stylelint";
+import { ESLint } from "eslint";
+import { getTree } from "./filesystem-utils/tree";
 
-
-async function lintCSS () : Promise<stylelint.LintResult[]> {
-   const styleLintResults = await stylelint.lint({fix : true, configBasedir : path.resolve(__dirname, '..', '..'), files : path.resolve(__dirname, '..', '..', '**/*.{css,scss,sass}'), formatter : 'json'})
-   if (styleLintResults.errored) {
-       console.error('ERROR', 'stylelint raised an error')  
-   }
-   return  styleLintResults.results;
+async function lintCSS(): Promise<stylelint.LintResult[]> {
+  const styleLintResults = await stylelint.lint({
+    fix: true,
+    configBasedir: path.resolve(__dirname, "..", ".."),
+    files: path.resolve(__dirname, "..", "..", "**/*.{css,scss,sass}"),
+    formatter: "json"
+  });
+  if (styleLintResults.errored) {
+    console.error("ERROR", "stylelint raised an error");
+  }
+  return styleLintResults.results;
 }
-async function lintTS () : Promise<ESLint.LintResult[]>{
-    const esLint = new ESLint({
-        fix : true,
-        ignorePath : path.resolve(__dirname, '..', '..', '.gitignore'),
-        overrideConfigFile : path.resolve(__dirname, '..', '..', '.eslintrc.js'),
-    });
-    const results = await esLint.lintFiles(path.resolve(__dirname, '..', '..', '.'))
+async function lintTS(): Promise<ESLint.LintResult[]> {
+  const esLint = new ESLint({
+    fix: true,
+    ignorePath: path.resolve(__dirname, "..", "..", ".gitignore"),
+    overrideConfigFile: path.resolve(__dirname, "..", "..", ".eslintrc.js")
+  });
+  const results = await esLint.lintFiles(
+    path.resolve(__dirname, "..", "..", ".")
+  );
 
-    await ESLint.outputFixes(results);
+  await ESLint.outputFixes(results);
 
-    // const formatter = await esLint.loadFormatter('json')
-    // const resultText = formatter.format(results)
-    // return JSON.parse(resultText) 
-    return results
+  // const formatter = await esLint.loadFormatter('json')
+  // const resultText = formatter.format(results)
+  // return JSON.parse(resultText)
+  return results;
 }
 
-
-export async function analyze(sources : string, output : string) : Promise<void> {
-    const absSources = path.resolve(process.cwd(), sources);
-    const absDest = path.resolve(process.cwd(), output);
-    console.debug('input path', absSources)
-    console.debug('output path', absDest)
-    const arbo = await getTree(absSources);
-    fs.writeFile(absDest, JSON.stringify(arbo, null, 4));
-   /* return ;
+export async function analyze(sources: string, output: string): Promise<void> {
+  const absSources = path.resolve(process.cwd(), sources);
+  const absDest = path.resolve(process.cwd(), output);
+  console.debug("input path", absSources);
+  console.debug("output path", absDest);
+  const arbo = await getTree(absSources);
+  fs.writeFile(absDest, JSON.stringify(arbo, null, 4));
+  /* return ;
     const results = {
         css : await lintCSS(),
         ts : await lintTS(),
@@ -91,6 +96,3 @@ export async function analyze(sources : string, output : string) : Promise<void>
     console.log(JSON.stringify(sources, null, 4))
     fs.writeFile(path.resolve(__dirname, '..', '..', 'dist', 'reports', 'lint', 'merged-report.json'), JSON.stringify(results, null, 4));*/
 }
-
-
-

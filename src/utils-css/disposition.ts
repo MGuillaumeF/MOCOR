@@ -1,6 +1,6 @@
-import './disposition.scss'
+import "./disposition.scss";
 
 export enum EFlex {
-    COLUMN = "df-col",
-    ROW = "df-row"
+  COLUMN = "df-col",
+  ROW = "df-row"
 }

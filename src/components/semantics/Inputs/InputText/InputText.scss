@@ -1,13 +1,13 @@
 .mocor-input-text-container {
-  input[type=text].mocor {
-    background-color: #FFFFFF0a;
-    border-width: 0 0 4px 0 ;
-    border-style: solid ;
-    border-color:rgb(224, 253, 3);
-    color : white;
+  input[type="text"].mocor {
+    background-color: #ffffff0a;
+    border-width: 0 0 4px 0;
+    border-style: solid;
+    border-color: rgb(224, 253, 3);
+    color: white;
   }
-  input[type=text].mocor:focus {
-    border-color:rgb(255, 255, 255);
+  input[type="text"].mocor:focus {
+    border-color: rgb(255, 255, 255);
     outline: none;
   }
 }
