@@ -43,7 +43,7 @@
       }
     },
     {
-      "files": ["*.html", "*.htm"],
+      "files": ["*.html", "*.htm", "*.xml", "*.svg"],
       "options": {
         "parser": "html"
       }
