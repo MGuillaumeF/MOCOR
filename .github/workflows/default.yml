@@ -5,9 +5,9 @@ name: MOCOR CI - DEFAULT
 
 on:
   push:
-    branches: [ draft ]
+    branches: [ main ]
   pull_request:
-    branches: [ draft ]
+    branches: [ main ]
 
 jobs:
   build:
