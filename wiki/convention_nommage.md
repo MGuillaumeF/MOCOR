@@ -10,15 +10,21 @@ Les fichiers, les variables, méthodes, classes, interfaces ne doivent pas conte
 
 Les variables, méthodes, classes, interfaces doivent commencer par une lettre.
 
+## Reparition types et interfaces
+
+Les interfaces sont à limiter à la description de la composition des composants et des classes, dans le cas des structures de données utilisées des déclarations de type 
+
 ### Les préfix
 
-- \_ avec un underscore on déclare que l’attribue ou la fonction ne doit pas être utilisée.
-- E avec un « E » majuscule devant le nom des énumérés
-- I avec un « I » majuscule devant le nom des interfaces
+- \_ avec un underscore on déclare que l’attribue ou la fonction ne doit pas être utilisée même si il est exposé
+- E devant le nom des énumérés
+- I devant le nom des interfaces
+- s\_ devant les attributs de classe statique
+- m\_ devant les attributs de classe
 
 ### Les suffixes
 
-_sans objet_
+- \_t après les déclarations de type
 
 ### Les extensions
 
