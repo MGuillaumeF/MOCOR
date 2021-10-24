@@ -34,3 +34,9 @@ jobs:
     - run: npm run int:eslint
     - run: npm run int:stylelint
     - run: npm run lint:htmllint
+
+    - name: SonarCloud Scan
+      uses: sonarsource/sonarcloud-github-action@master
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
