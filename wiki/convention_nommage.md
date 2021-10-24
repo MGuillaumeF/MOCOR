@@ -8,11 +8,7 @@ Les fichiers, les variables, méthodes, classes, interfaces ne doivent pas conte
 - d’espace
 - de caractère spéciaux
 
-Les variables, méthodes, classes, interfaces doivent commencer par une lettre.
-
-## Reparition types et interfaces
-
-Les interfaces sont à limiter à la description de la composition des composants et des classes, dans le cas des structures de données utilisées des déclarations de type 
+Les variables, méthodes, classes, interfaces doivent commencer par une lettre. 
 
 ### Les préfix
 
@@ -67,3 +63,7 @@ Si possible éviter les majuscules pour les noms des fichiers (sauf quand le nom
 Les fichiers de police de caractère suive le nom de la police avec son style et sa graisse,
 
 Exemple : pour une police « Nunito Sans » en italique avec une graisse de 300 donnerait Nunito-Sans_Italic_Light.svg
+
+> **Répartition types et interfaces.**   
+> Les interfaces sont à limiter à la description de la composition des composants et des classes, dans le cas des structures de données utilisées des déclarations de type
+
