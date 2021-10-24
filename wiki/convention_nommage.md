@@ -65,5 +65,4 @@ Les fichiers de police de caractère suive le nom de la police avec son style et
 Exemple : pour une police « Nunito Sans » en italique avec une graisse de 300 donnerait Nunito-Sans_Italic_Light.svg
 
 > **Répartition types et interfaces.**   
-> Les interfaces sont à limiter à la description de la composition des composants et des classes, dans le cas des structures de données utilisées des déclarations de type
-
+> Les interfaces sont à limiter à la description de la composition des composants et des classes, dans le cas des structures de données, utiliser des déclarations de type
